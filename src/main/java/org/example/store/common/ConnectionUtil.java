@@ -21,7 +21,7 @@ public enum ConnectionUtil {
         config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");
         config.setConnectionTimeout(1000*10);
         config.setMaximumPoolSize(20);
-        config.setMinimumIdle(1); // 처음부터 연결을 많이 하면 비용문제
+        config.setMinimumIdle(1);
 
         ds = new HikariDataSource(config);
     }

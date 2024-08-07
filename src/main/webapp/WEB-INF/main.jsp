@@ -15,5 +15,13 @@
       main.jsp
   </h1>
   <p>${aniList}</p>
+     <c:forEach items="${aniList}" var="goods">
+        <div class="goods">
+               ${goods}
+            <a href="/goods=${goods.ano}">
+                <img src="/img/${goods.img1}">
+            </a>
+       </div>
+     </c:forEach>
 </body>
 </html>

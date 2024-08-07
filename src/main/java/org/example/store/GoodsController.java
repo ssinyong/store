@@ -38,7 +38,7 @@ public class GoodsController extends HttpServlet {
             req.getRequestDispatcher("/WEB-INF/goods.jsp").forward(req, resp);
 
         }catch(Exception e) {
-            e.printStackTrace();//debug
+            e.printStackTrace();
         }
     }
 }
