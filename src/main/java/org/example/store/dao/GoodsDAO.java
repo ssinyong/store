@@ -102,7 +102,7 @@ public enum GoodsDAO {
 
     public List<GoodsVO> getWantedList(List<Integer> wanted)throws Exception {
 
-        String queryPrefix = "select * from tbl_merchandise where wanted IN (";
+        String queryPrefix = "select * from tbl_merchandise where mno IN (";
 
         String result = wanted.stream()
                 .map(n -> "?") // 각 요소를 "?"로 변환
